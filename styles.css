@@ -1,14 +1,16 @@
 /* Color Variables */
 :root {
-    --maroon: #800020;
-    --maroon-dark: #5a0016;
-    --maroon-light: #a0002a;
-    --gold: #d4af37;
-    --gold-light: #f4d03f;
-    --gold-dark: #b8860b;
+    --forest-green: #2d5016;
+    --forest-green-dark: #1a3009;
+    --forest-green-light: #4a7c2a;
+    --sage-green: #9caf88;
+    --sage-light: #b8c5a6;
+    --sage-dark: #7a8b6b;
+    --earth-brown: #8b4513;
+    --earth-light: #a0522d;
     --white: #ffffff;
     --light-gray: #f8f9fa;
-    --dark-gray: #343a40;
+    --dark-gray: #2c3e2d;
 }
 
 /* Global Styles */
@@ -18,19 +20,14 @@ body {
     color: var(--dark-gray);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
 /* Navigation */
 .navbar {
-    background-color: rgba(128, 0, 32, 0.95) !important;
+    background-color: rgba(45, 80, 22, 0.95) !important;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
@@ -39,7 +36,7 @@ h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--gold) !important;
+    color: var(--sage-green) !important;
 }
 
 .nav-link {
@@ -50,14 +47,14 @@ h6 {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--gold) !important;
+    color: var(--sage-green) !important;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(128, 0, 32, 0.7), rgba(128, 0, 32, 0.7)),
-        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(45, 80, 22, 0.7)),
+                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -82,7 +79,7 @@ h6 {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: var(--gold);
+    color: var(--sage-green);
     margin-bottom: 2rem;
     font-weight: 300;
 }
@@ -96,7 +93,7 @@ h6 {
 }
 
 .date-text {
-    color: var(--gold);
+    color: var(--sage-green);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -114,37 +111,37 @@ h6 {
 
 /* Buttons */
 .btn-primary {
-    background-color: var(--gold);
-    border-color: var(--gold);
-    color: var(--maroon);
+    background-color: var(--sage-green);
+    border-color: var(--sage-green);
+    color: var(--forest-green);
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: var(--gold-dark);
-    border-color: var(--gold-dark);
+    background-color: var(--sage-dark);
+    border-color: var(--sage-dark);
     color: var(--white);
     transform: translateY(-2px);
 }
 
 .btn-outline-light {
-    border-color: var(--gold);
-    color: var(--gold);
+    border-color: var(--sage-green);
+    color: var(--sage-green);
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .btn-outline-light:hover {
-    background-color: var(--gold);
-    border-color: var(--gold);
-    color: var(--maroon);
+    background-color: var(--sage-green);
+    border-color: var(--sage-green);
+    color: var(--forest-green);
     transform: translateY(-2px);
 }
 
 /* Section Styles */
 .section-title {
-    color: var(--maroon);
+    color: var(--forest-green);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -171,7 +168,7 @@ h6 {
 
 .info-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(128, 0, 32, 0.2);
+    box-shadow: 0 20px 40px rgba(45, 80, 22, 0.2);
 }
 
 .card-icon {
@@ -180,7 +177,7 @@ h6 {
 }
 
 .card-title {
-    color: var(--maroon);
+    color: var(--forest-green);
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -192,7 +189,7 @@ h6 {
 
 /* Footer */
 .footer {
-    background-color: var(--maroon);
+    background-color: var(--forest-green);
     color: var(--white);
 }
 
@@ -201,19 +198,19 @@ h6 {
     .hero-title {
         font-size: 2.5rem;
     }
-
+    
     .hero-subtitle {
         font-size: 1.2rem;
     }
-
+    
     .date-text {
         font-size: 1.5rem;
     }
-
+    
     .section-title {
         font-size: 2rem;
     }
-
+    
     .hero-buttons .btn {
         display: block;
         width: 100%;
@@ -226,10 +223,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--forest-green);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--forest-green-dark);
+}
+
 /* Page Header */
 .page-header {
-    background: linear-gradient(rgba(128, 0, 32, 0.8), rgba(128, 0, 32, 0.8)),
-        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(45, 80, 22, 0.8)),
+                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
     padding: 150px 0 80px;
@@ -244,7 +259,7 @@ html {
 
 .page-subtitle {
     font-size: 1.3rem;
-    color: var(--gold);
+    color: var(--sage-green);
     font-weight: 300;
 }
 
@@ -264,7 +279,7 @@ html {
 
 .memory-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 25px 50px rgba(128, 0, 32, 0.2);
+    box-shadow: 0 25px 50px rgba(45, 80, 22, 0.2);
 }
 
 .memory-image {
@@ -280,7 +295,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid var(--gold);
+    border-bottom: 3px solid var(--sage-green);
 }
 
 .memory-image img {
@@ -299,7 +314,7 @@ html {
 }
 
 .memory-date {
-    color: var(--gold);
+    color: var(--sage-green);
     font-weight: 600;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
@@ -308,7 +323,7 @@ html {
 }
 
 .memory-content h3 {
-    color: var(--maroon);
+    color: var(--forest-green);
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -326,24 +341,19 @@ html {
     .memory-card {
         margin-bottom: 2rem;
     }
-
+    
     .memory-image {
         height: 200px;
     }
-
+    
     .memory-content {
         padding: 1.5rem;
     }
 }
 
-.placeholder-text {
-    color: var(--maroon);
-    font-style: italic;
-}
-
 /* Quote Section */
 .quote-section {
-    background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+    background: linear-gradient(135deg, var(--forest-green) 0%, var(--forest-green-dark) 100%);
     color: var(--white);
 }
 
@@ -352,13 +362,13 @@ html {
     font-style: italic;
     margin: 0;
     padding: 2rem;
-    border-left: 4px solid var(--gold);
+    border-left: 4px solid var(--sage-green);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
 .quote-author {
-    color: var(--gold);
+    color: var(--sage-green);
     font-weight: 500;
     margin-top: 1rem;
 }
@@ -384,7 +394,7 @@ html {
 }
 
 .info-section h3 {
-    color: var(--maroon);
+    color: var(--forest-green);
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -420,11 +430,11 @@ html {
     padding: 1.5rem;
     background: var(--light-gray);
     border-radius: 10px;
-    border-left: 4px solid var(--gold);
+    border-left: 4px solid var(--sage-green);
 }
 
 .schedule-time {
-    background: var(--maroon);
+    background: var(--forest-green);
     color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -435,7 +445,7 @@ html {
 }
 
 .schedule-event h5 {
-    color: var(--maroon);
+    color: var(--forest-green);
     margin-bottom: 0.5rem;
 }
 
@@ -453,12 +463,12 @@ html {
     background: var(--white);
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(128, 0, 32, 0.1);
-    border: 2px solid var(--gold);
+    box-shadow: 0 15px 40px rgba(45, 80, 22, 0.1);
+    border: 2px solid var(--sage-green);
 }
 
 .rsvp-card h3 {
-    color: var(--maroon);
+    color: var(--forest-green);
     margin-bottom: 1.5rem;
 }
 
@@ -497,65 +507,146 @@ a {
 }
 
 a:hover {
-    color: var(--gold);
+    color: var(--sage-green);
 }
 
 /* Registry Links */
 .registry-link {
-    color: var(--maroon);
+    color: var(--forest-green);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .registry-link:hover {
-    color: var(--gold);
+    color: var(--sage-green);
 }
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-marker {
-        left: 20px;
-    }
-
-    .timeline-content {
-        margin-left: 50px;
-        margin-right: 0;
-    }
-
     .page-title {
         font-size: 2.5rem;
     }
-
+    
     .schedule-item {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .schedule-time {
         margin-right: 0;
         margin-bottom: 1rem;
     }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
+/* Wedding Party Styles */
+.wedding-party {
     background: var(--light-gray);
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--maroon);
-    border-radius: 4px;
+.party-section-title {
+    color: var(--forest-green);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--maroon-dark);
+.party-section-subtitle {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.party-member-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    text-align: center;
+}
+
+.party-member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(45, 80, 22, 0.2);
+}
+
+.member-photo {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--sage-green);
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.party-member-card:hover .member-photo img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 2rem 1.5rem;
+}
+
+.member-name {
+    color: var(--forest-green);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.member-role {
+    color: var(--sage-green);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.member-bio {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.thank-you-section {
+    background: linear-gradient(135deg, var(--forest-green) 0%, var(--forest-green-dark) 100%);
+    color: var(--white);
+}
+
+/* Responsive Wedding Party */
+@media (max-width: 768px) {
+    .party-member-card {
+        margin-bottom: 2rem;
+    }
+    
+    .member-photo {
+        height: 200px;
+    }
+    
+    .member-info {
+        padding: 1.5rem;
+    }
+    
+    .party-section-title {
+        font-size: 2rem;
+    }
 }
