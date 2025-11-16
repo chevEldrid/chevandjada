@@ -20,7 +20,12 @@ body {
     color: var(--dark-gray);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
@@ -54,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(45, 80, 22, 0.7)),
-                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        url('pictures/back1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -103,6 +108,27 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+/* Hero section links - special styling for white text on dark background */
+.hero a,
+.date-location a {
+    color: var(--white);
+    text-decoration: underline;
+    text-decoration-color: var(--sage-green);
+    text-underline-offset: 3px;
+    transition: all 0.3s ease;
+}
+
+.hero a:hover,
+.date-location a:hover {
+    color: var(--sage-green);
+    text-decoration-color: var(--white);
+}
+
+/* Buttons in hero should not have underline */
+.hero .btn {
+    text-decoration: none !important;
 }
 
 .hero-buttons {
@@ -198,19 +224,19 @@ h1, h2, h3, h4, h5, h6 {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .date-text {
         font-size: 1.5rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .hero-buttons .btn {
         display: block;
         width: 100%;
@@ -244,7 +270,7 @@ html {
 /* Page Header */
 .page-header {
     background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(45, 80, 22, 0.8)),
-                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
     padding: 150px 0 80px;
@@ -341,11 +367,11 @@ html {
     .memory-card {
         margin-bottom: 2rem;
     }
-    
+
     .memory-image {
         height: 200px;
     }
-    
+
     .memory-content {
         padding: 1.5rem;
     }
@@ -501,25 +527,38 @@ html {
 
 /* Link Styling */
 a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: var(--forest-green);
+    text-decoration: underline;
+    text-decoration-color: var(--sage-green);
+    text-underline-offset: 3px;
+    transition: all 0.3s ease;
 }
 
 a:hover {
     color: var(--sage-green);
+    text-decoration-color: var(--forest-green);
+}
+
+/* Buttons and navigation links should not have underline */
+.btn,
+.nav-link,
+.navbar-brand {
+    text-decoration: none !important;
 }
 
 /* Registry Links */
 .registry-link {
     color: var(--forest-green);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: var(--sage-green);
+    text-underline-offset: 3px;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .registry-link:hover {
     color: var(--sage-green);
+    text-decoration-color: var(--forest-green);
 }
 
 /* Responsive Timeline */
@@ -527,12 +566,12 @@ a:hover {
     .page-title {
         font-size: 2.5rem;
     }
-    
+
     .schedule-item {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .schedule-time {
         margin-right: 0;
         margin-bottom: 1rem;
@@ -637,15 +676,15 @@ a:hover {
     .party-member-card {
         margin-bottom: 2rem;
     }
-    
+
     .member-photo {
         height: 200px;
     }
-    
+
     .member-info {
         padding: 1.5rem;
     }
-    
+
     .party-section-title {
         font-size: 2rem;
     }
