@@ -151,6 +151,21 @@ h6 {
     transform: translateY(-2px);
 }
 
+.btn-rsvp {
+    background-color: var(--earth-brown);
+    border-color: var(--earth-brown);
+    color: var(--white);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-rsvp:hover {
+    background-color: var(--earth-light);
+    border-color: var(--earth-light);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
 .btn-outline-light {
     border-color: var(--sage-green);
     color: var(--sage-green);
@@ -241,6 +256,7 @@ h6 {
         display: block;
         width: 100%;
         margin-bottom: 1rem;
+        margin-left: 0 !important;
     }
 }
 
@@ -489,13 +505,17 @@ html {
     background: var(--white);
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(45, 80, 22, 0.1);
-    border: 2px solid var(--sage-green);
+    box-shadow: 0 15px 40px rgba(139, 69, 19, 0.2);
+    border: 2px solid var(--earth-brown);
 }
 
 .rsvp-card h3 {
-    color: var(--forest-green);
+    color: var(--earth-brown);
     margin-bottom: 1.5rem;
+}
+
+.rsvp-card p {
+    color: var(--earth-brown);
 }
 
 .rsvp-options {
