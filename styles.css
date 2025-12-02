@@ -221,13 +221,6 @@ h6 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        background-size: contain;
-        background-position: center top;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-    }
-
     .hero-title {
         font-size: 2.5rem;
     }
