@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oakland - Chev & Jada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chev & Jada</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wedding-party.html">Wedding Party</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="information.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="oakland.html">Oakland</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="page-title">Welcome to Oakland!</h1>
+                    <p class="page-subtitle">Our favorite spots in the city</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content: Map and List -->
+    <section class="wedding-details py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Google Map on the left -->
+                <div class="col-lg-7">
+                    <div class="map-container">
+                        <a href="https://www.google.com/maps/d/u/0/edit?mid=1MLL4UE4z9F8F_1qXF4lvGPdo6R7Ldk8&usp=sharing" target="_blank"
+                            rel="noopener noreferrer" class="map-preview-link">
+                            <img src="pictures/map.png" alt="Oakland Map - Click to view interactive map" class="map-preview-image">
+                            <div class="map-overlay">
+                                <div class="map-overlay-content">
+                                    <span class="map-icon">🗺️</span>
+                                    <p class="map-text">Click to view interactive map</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- List of locations on the right -->
+                <div class="col-lg-5">
+                    <div class="locations-list">
+                        <!-- Things to Eat -->
+                        <div class="location-category mb-4">
+                            <h3 class="category-title">🍽️ Things to Eat</h3>
+                            <ul class="location-items">
+                                <li class="location-item">
+                                    <strong>Mama's Royal Cafe</strong>
+                                    <p class="location-desc">Our favorite breakfast spot in Oakland.</p>
+                                </li>
+                                <li class="location-item">
+                                    <strong>Lovely's</strong>
+                                    <p class="location-desc">Burgers, Beer, what more could you need?</p>
+                                </li>
+                                <li class="location-item">
+                                    <strong>Fenton's Creamery</strong>
+                                    <p class="location-desc">Top tier ice cream, top tier neighborhood.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Things to See -->
+                        <div class="location-category mb-4">
+                            <h3 class="category-title">👁️ Neighborhoods to See</h3>
+                            <ul class="location-items">
+                                <li class="location-item">
+                                    <strong>Piedmont Avenue</strong>
+                                    <p class="location-desc">Points of interest: Fenton's Creamery, used bookstores, ramen, and so many pastries.</p>
+                                </li>
+                                <li class="location-item">
+                                    <strong>Rockridge</strong>
+                                    <p class="location-desc">Public market, plenty of restaurants, and an arcade bar! Follow it all the way to
+                                        Berkeley</p>
+                                </li>
+                                <li class="location-item">
+                                    <strong>Temescal</strong>
+                                    <p class="location-desc">Our home! Routinely voted BEST FOOD IN THE UNITED STATES!</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Things to Hike -->
+                        <div class="location-category mb-4">
+                            <h3 class="category-title">🥾 Things to Hike</h3>
+                            <ul class="location-items">
+                                <li class="location-item">
+                                    <strong>Tilden Park</strong>
+                                    <p class="location-desc">We'll be spending the evening here on Saturday but there's so much to the park! Botanic
+                                        gardens, a lake, trains...</p>
+                                </li>
+                                <li class="location-item">
+                                    <strong>Emeryville Marina Park</strong>
+                                    <p class="location-desc">Very easy loop with beautiful bay views and a tiki bar!</p>
+                                </li>
+                                <li class="location-item">
+                                    <strong>Reinhardt Redwood Regional Park</strong>
+                                    <p class="location-desc">Big fan of the French, Stream, Mill trail loop!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Chev & Jada. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
